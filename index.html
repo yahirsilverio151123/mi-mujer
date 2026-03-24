@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invitación 💖</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<audio id="musica" loop>
+    <source src="23.mp3" type="audio/mpeg">
+</audio>
+
+<div class="sobre" id="sobre" onclick="abrirSobre()">
+    <div class="tapa"></div>
+    <div class="cuerpo"></div>
+    <p class="texto-sobre">💌 Toca para abrir</p>
+</div>
+
+<div class="wrapper">
+
+    <div class="tarjeta">
+
+        <h2>Mi Cumple </h2>
+
+        <img src="cumple.png" class="img-principal">
+
+        <img src="amorcito.png" class="img-novia">
+
+        <div class="mensaje">
+             ⭐Acompáñame a mi cumpleaños⭐ <br><br>
+             Silencio… no le digas a María :) es secreto<br><br>
+            ⭐ Es especial, sé puntual ⭐<br><br>
+             4 de abril - 2:00 PM
+        </div>
+
+        <div class="ubicacion">
+            📍 Lugar:  <br>
+            <a href="https://maps.google.com/?q=Pte. 18 359, La Perla, 57830 Cdad. Nezahualcóyotl, Méx." target="_blank">
+                Ver ubicación en Google Maps
+            </a>
+        </div>
+
+        <div id="contador"></div>
+
+        <button onclick="irFormulario()">Asistir ⭐</button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
