@@ -85,10 +85,10 @@ body::after { left: 80%; animation-delay: 10s; }
 }
 
 .cuerpo {
-    width: 260px;  /* ← VUELTO AL ORIGINAL */
-    height: 180px; /* ← VUELTO AL ORIGINAL */
+    width: 260px;
+    height: 180px;
     background: linear-gradient(145deg, #ff80ab, #ff4081);
-    border-radius: 20px; /* ← VUELTO AL ORIGINAL */
+    border-radius: 20px;
     position: absolute;
     box-shadow: 
         0 30px 60px rgba(233, 30, 99, 0.4),
@@ -97,15 +97,15 @@ body::after { left: 80%; animation-delay: 10s; }
 }
 
 .tapa {
-    width: 260px;  /* ← VUELTO AL ORIGINAL */
-    height: 180px; /* ← VUELTO AL ORIGINAL */
+    width: 260px;
+    height: 180px;
     background: linear-gradient(145deg, #e91e63, #ff4081);
     position: absolute;
-    clip-path: polygon(0 0, 100% 0, 50% 60%); /* ← VUELTO AL ORIGINAL */
-    transform-origin: top; /* ← ESENCIAL */
-    transition: transform 1s cubic-bezier(0.68, -0.55, 0.265, 1.55); /* ← SOLO TRANSFORM */
+    clip-path: polygon(0 0, 100% 0, 50% 60%);
+    transform-origin: top;
+    transition: transform 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     z-index: 2;
-    border-radius: 20px 20px 0 0; /* ← VUELTO AL ORIGINAL */
+    border-radius: 20px 20px 0 0;
     box-shadow: 
         0 25px 50px rgba(233, 30, 99, 0.5),
         inset 0 1px 0 rgba(255, 255, 255, 0.4);
@@ -113,7 +113,7 @@ body::after { left: 80%; animation-delay: 10s; }
 
 .texto-sobre {
     position: absolute;
-    bottom: 20%; /* ← VUELTO AL ORIGINAL */
+    bottom: 20%;
     color: white;
     font-size: 20px;
     font-family: 'Dancing Script', cursive;
@@ -137,7 +137,6 @@ body::after { left: 80%; animation-delay: 10s; }
     }
 }
 
-/* ← ESTAS REGLAS SON CRÍTICAS - NO CAMBIAR */
 .sobre.abierto .tapa {
     transform: rotateX(180deg);
 }
@@ -153,7 +152,6 @@ body::after { left: 80%; animation-delay: 10s; }
     }
 }
 
-/* ← TODO LO DEMÁS ÉPICO SIGUE IGUAL */
 .wrapper {
     width: 100%;
     min-height: 100vh;
@@ -228,21 +226,19 @@ h2 {
     to { filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.8)); }
 }
 
+/* ✅ IMAGEN CORREGIDA - SE VE PERFECTA */
 .img-principal {
     width: 100%;
     border-radius: 25px;
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
     transition: all 0.4s ease;
-    border: 3px solid transparent;
-    background: linear-gradient(45deg, #ff4081, #ffd700) border-box;
-    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-    mask-composite: exclude;
+    border: 4px solid rgba(255, 255, 255, 0.3);
 }
 
 .img-principal:hover {
     transform: scale(1.05) rotate(2deg);
     box-shadow: 0 35px 70px rgba(255, 64, 129, 0.6);
+    border-color: rgba(255, 215, 0, 0.8);
 }
 
 .img-novia {
