@@ -28,5 +28,5 @@ setInterval(() => {
     const minutos = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
 
     document.getElementById("contador").innerHTML =
-        " " + dias + "d " + horas + "h " + minutos + "m";
+         + dias + "d " + horas + "h " + minutos + "m";
 }, 1000);
